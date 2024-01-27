@@ -1,0 +1,1070 @@
+/* =====================================
+Template Name: 	Mediplus.
+Author Name: Naimur Rahman
+Website: http://wpthemesgrid.com/
+Description: Mediplus - Doctor HTML Template.
+Version:	1.1
+========================================*/   
+/*======================================
+[ CSS Table of contents ]
+* Global CSS
+* Header CSS
+	+ Topbar
+	+ Logo
+	+ Widget
+	+ Main Menu
+	+ Search
+* Hero Slider CSS
+* Schedule CSS
+* Feautes CSS
+* Fun Facts CSS
+* Why Choose CSS
+* Call to Action CSS
+* Portfolio CSS
+	+ Portfolio Single CSS
+* Services CSS
+* Testimonials CSS
+* Departments CSS
+* Pricing Table CSS
+* Clients CSS
+* Team CSS
+	+ Single Team
+* Blog CSS
+	+ Latest Blog CSS
+	+ Blog Single CSS
+	+ Blog Sidebar CSS
+* Appointment CSS
+* Login CSS
+* Register CSS
+* Faq CSS
+* Contact Us CSS
+* Error 404 CSS
+* Mail Success CSS
+* Newsletter CSS
+* Doctor Calendar CSS
+* About Us CSS
+* Footer CSS
+========================================*/ 
+/*=============================
+	Global CSS 
+===============================*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #888;
+}
+
+#scrollUp {
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 20px;
+	background: #1a76d1;
+	color: #fff;
+	font-size: 25px;
+	width: 45px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	padding: 0;
+	border-radius: 3px;
+	box-shadow: 0px 0px 10px #00000026;
+}
+#scrollUp:hover{
+	background:#2C2D3F;
+}
+/* Color Plate */
+.color-plate {
+	position: fixed;
+	display: block;
+	z-index: 99998;
+	padding: 20px;
+	width: 245px;
+	background: #fff;
+	right: -245px;
+	text-align: left;
+	top: 30%;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	-webkit-box-shadow: -3px 0px 25px -2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: -3px 0px 25px -2px rgba(0, 0, 0, 0.2);
+	box-shadow: -3px 0px 25px -2px rgba(0, 0, 0, 0.2);
+}
+.color-plate.active{
+	right:0;
+}
+.color-plate .color-plate-icon {
+	position: absolute;
+	left: -48px;
+	width: 48px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 21px;
+	border-radius: 5px 0 0 5px;
+	background: #1A76D1;
+	text-align: center;
+	color: #fff !important;
+	top: 0;
+	cursor: pointer;
+	box-shadow: -4px 0px 5px #00000036;
+}
+.color-plate h4 {
+	display: block;
+	font-size: 15px;
+	margin-bottom: 5px;
+	font-weight: 500;
+}
+.color-plate p {
+	font-size: 13px;
+	margin-bottom: 15px;
+	line-height: 20px;
+}
+.color-plate span {
+	width: 42px;
+	height: 35px;
+	border-radius: 0;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 3px;
+}
+.color-plate span:hover{
+	cursor:pointer;
+}
+.color-plate span.color1{
+	background:#76a32d;
+}
+.color-plate span.color2{
+	background:#2196F3;
+}
+.color-plate span.color3{
+	background:#32B87D;
+}
+.color-plate span.color4{
+	background:#FE754A;
+}
+.color-plate span.color5{
+	background:#F82F56;
+}
+.color-plate span.color6{
+	background:#01B2B7;
+}
+.color-plate span.color7{
+	background:#6c5ce7;
+}
+.color-plate span.color8{
+	background:#85BA46;
+}
+.color-plate span.color9{
+	background:#273c75;
+}
+.color-plate span.color10{
+	background:#FD7272;
+}
+.color-plate span.color11{
+	background:#badc58;
+}
+.color-plate span.color12{
+	background:#44ce6f;
+}
+/*=============================
+	End Global CSS 
+===============================*/
+
+/*===================
+	Start Header CSS 
+=====================*/
+.header{
+	background-color:#000000;
+	position:relative;
+}
+.header .navbar-collapse{
+	padding:0;
+}
+.header .header-inner {
+	background-color:#000000;
+	z-index:999;
+	width:100%;
+}
+.get-quote{
+	margin-top:12px;
+	padding-left: 180px;
+}
+.get-quote .btn{
+	color:#fff;
+	background-color:  #76a32d;;
+}
+.header .logo {
+	float: left;
+	margin-top: 15px;
+	width: 60%;
+	height: auto;
+}
+.header .navbar {
+	background: none;
+	box-shadow: none;
+	border: none;
+	margin: 0;
+	height: 0px;
+	min-height: 0px;
+}
+.header .nav li{
+	margin-right: 15px;
+    float: left;
+	position:relative;
+}
+.header .nav li:last-child{
+	margin:0;
+}
+.header .nav li a {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: capitalize;
+	padding: 25px 12px;
+	position: relative;
+	display: inline-block;
+	position:relative;
+}
+.header .nav li a::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width:0%;
+	background: #76a32d;
+	border-radius: 5px 5px 0 0;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.header .nav li.active a:before{
+	opacity:1;
+	visibility:visible;
+	width: 100%;
+}
+.header .nav li.active a{
+	color:#ffffff;
+}
+.header .nav li:hover a:before{
+	opacity:1;
+	width: 100%;
+	visibility:visible;
+}
+.header .nav li:hover a{
+	color:#76a32d;
+}
+.header .nav li a i {
+	display: inline-block;
+	margin-left: 1px;
+	font-size: 13px;
+}
+/* Header Sticky */
+.header.sticky .header-inner{
+	position:fixed;
+	z-index:999;
+	top:0;
+	left:0;
+	bottom:initial;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	animation: fadeInDown 0.5s both 0.1s;
+	box-shadow:0px 0px 13px #00000054;
+}
+/*=========================
+	End Header CSS
+===========================*/
+
+/*===========================
+	Start Hero Area CSS
+=============================*/
+.slider .single-slider {
+	height: 500px ;
+	background-size: cover;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+.slider .single-slider .text{
+	margin-top:150px;
+}
+.slider.index2 .single-slider .text{
+	margin-top:150px;
+}
+.slider .single-slider h1 {
+	color: #2C2D3F;
+	font-size: 38px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	line-height: 42px;
+}
+.slider .single-slider h1 span{
+	color:#76a32d;
+}
+.slider .single-slider p {
+	color: #2C2D3F;
+	margin-top: 27px;
+	font-weight: 400;
+}
+.slider .single-slider .button{
+	margin-top:30px;
+}
+.slider .single-slider .btn{
+	color:#fff;
+	background: #76a32d;;
+	font-weight:500;
+	display:inline-block;
+	margin:0;
+	margin-right:10px;
+}
+.slider .single-slider .btn:last-child{
+	margin:0;
+}
+/*===========================
+	End Hero Area CSS
+=============================*/
+
+/*=============================
+	Start Schedule CSS
+===============================*/
+.schedule {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.schedule h1 {
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.schedule .schedule-container {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 5fr);
+    grid-gap: 20px;
+}
+
+.schedule .schedule_box {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    background-color: #76a32d;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.schedule .schedule_box:hover {
+    transform: translateY(-5px);
+    opacity: 0.8;
+    background-color: #76a32d;
+	box-shadow: #76a32d;
+}
+
+.schedule .schedule_box .schedule_info h2 {
+    text-align: left;
+    font-size: 20px;
+	font-weight: bold;
+    color: #ffffff;
+	padding: 20px;
+	padding-top: 30px;
+}
+
+.schedule .schedule_box .schedule_info h3 {
+    text-align: left;
+    color: #ffffff;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 10px;
+	font-size: 18px;
+}
+.schedule .schedule_box .schedule_info h4 {
+    text-align: left;
+	font-size: 18px;
+    padding-left: 18px;
+	padding-top: 30px;
+    color: #ffffff;
+}
+
+.schedule .schedule_box .schedule_info a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 25px;
+}
+.schedule .schedule_box .schedule_info a:hover {
+    color: #000000;
+}
+
+/*=============================
+	End Schedule CSS
+===============================*/
+/*=========================
+	Start Footer CSS
+===========================*/
+.footer{
+	position:relative;
+}
+.footer .footer-top{
+	padding:50px 0px;
+	position:relative;
+	background:#76a32d;
+}
+.footer .footer-top:before{
+	position:absolute;
+	content:"";
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	background:#000;
+	opacity:0.1;
+}
+.footer .single-footer.f-link li a i{
+	margin-right:10px;
+}
+.footer .single-footer.f-link li{
+	display:block;
+	margin-bottom:12px;
+}
+.footer .single-footer.f-link li:last-child{
+	margin:0;
+}
+.footer .single-footer.f-link li a {
+	display: block;
+	color: #fff;
+	text-transform: capitalize;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-weight: 400;
+}
+.footer .single-footer.f-link li a:hover{
+	padding-left:8px;
+}
+.footer .single-footer h2{
+	color:#fff;
+	font-size:20px;
+	font-weight:600;
+	text-transform:capitalize;
+	margin-bottom:40px;
+	padding-bottom:20px;
+	text-transform:capitalize;
+	position:relative;
+}
+.footer .single-footer h2::before{
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0px;
+	height: 3px;
+	width: 50px;
+	background: #fff;
+}
+.footer .single-footer p{
+	color:#fff;
+}
+.footer .single-footer .newsletter-inner{
+	position:relative;
+}
+.footer .single-footer .newsletter-inner input {
+	background: transparent;
+	border: 1px solid #fff;
+	height: 50px;
+	line-height: 42px;
+	width: 100%;
+	color: #fff;
+	padding-left: 18px;
+	padding-right: 70px;
+	display: inline-block;
+	border-radius: 0px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-weight: 400;
+	border-radius: 5px;
+}
+.footer .single-footer .newsletter-inner input:hover{
+	padding-left: 22px;
+}
+.footer input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+
+.footer input::-moz-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+
+.footer input::-ms-input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+.footer input::input-placeholder {
+    opacity: 1;
+    color: #fff !important;
+}
+.footer .single-footer .newsletter-inner .button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 50px;
+	line-height: 50px;
+	width: 50px;
+	margin-top: 32px;
+	background: #fff;
+	border-left: 1px solid #fff;
+	text-shadow: none;
+	box-shadow: none;
+	display: inline-block;
+	border-radius: 0px;
+	border: none;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 0 5px 5px 0;
+	color:#76a32d;
+	font-size: 25px;
+}
+.footer .single-footer .newsletter-inner .button i{
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.footer .single-footer .newsletter-inner .button:hover i{
+	color:#2C2D3F;
+}
+/*=========================
+	End Footer CSS
+===========================*/
+
+/*=========================
+	Menu Nutrisi
+===========================*/
+*Menu*/
+
+.menu{
+    width: 100%;
+    padding: 100px 0;
+}
+
+.menu h1{
+    font-size: 50px;
+	font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.menu .menu_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15fr 15fr 15fr 15fr;
+    grid-gap: 20px;
+}
+.menu .menu_box .menu_card {
+    width: 325px;
+    height: 180px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    background-color: #76a32d;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu .menu_box .menu_card:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
+    background-color: #76a32d; /* Use the same background color */
+}
+
+	
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #000000;
+}
+
+.menu .menu_box .menu_card .menu_info h3 {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px; /* Menambahkan padding untuk memberikan ruang antara teks dan batas elemen */
+    color: #000; /* Warna teks */
+}
+
+/* BMI */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+ }
+:root{
+    --overlay-green: linear-gradient(315deg, #76a32d 0%, rgba(115, 195, 46, 0) 100%);
+    --overlay-opacity: linear-gradient(315deg, rgba(116, 192, 35, 0.167) 40%, rgba(95, 207, 35, 0.145) 100%);
+    --green: #76a32d;
+    --gunmetal: #253347;
+    --dark-electric-blue: #5E6E85;
+    --borders: #000000;
+    --white: #ffffff;
+}
+
+.inter-bold{
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+.heading-l{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 110%;
+    color: var(--green);
+    letter-spacing: -0.15rem;
+}
+
+.heading-m{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.heading-s{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.body-m{
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--green);
+}
+
+.body-s{
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block;
+}
+
+.space-imp-wel{
+    margin-top: 8%;
+    margin-bottom: 0%;
+}
+
+.space-imp-sp{
+    margin-top: 14%;
+}
+
+.heros{
+    display:flex;
+    position: relative;
+	padding-top: 20px;
+	padding-bottom: 150px;
+}
+
+.side-container{
+    width: 60%;
+    background: var(--overlay-green);
+    margin-left: 1.5rem;
+    border-radius: 0rem 0rem 2.186rem 2.185rem;
+}
+
+.side-elements{
+    padding: 3.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding-bottom: 12rem;
+}
+
+.logo{
+    width: 4rem;
+}
+
+.side-elements-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.side-elements-text h1{
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 110%;
+    color: var(--green);
+}
+
+.side-elements-text p{
+    width: 33rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--dark-electric-blue);
+}
+
+.bmi-card{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    background: var(--white);
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+    width: 38rem;
+    border-radius: 1rem;
+}
+
+.title{
+    padding: 1rem 2rem !important;
+    padding-top: 2rem !important;
+}
+
+.radio-box p{
+    padding: 1rem 1.4rem;
+    padding-bottom: 0rem;
+}
+
+.radios{
+    padding: 0rem 2rem;
+    display: flex;
+    gap: 10rem;
+}
+
+.radio-box{
+    display: flex;
+}
+
+input[type="radio"]{
+    width: 2.2rem;
+    background-color: green;
+    border: 1px solid black;
+}
+
+input[type="radio"]:checked{
+    background-color: var(--green);
+}
+
+input[type="radio"]:hover{
+    cursor: pointer;
+    border-color: red;
+}
+
+input[type="radio"]::before{
+    content: "";
+    width: 15px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em red;
+}
+
+input[type="radio"]:checked::before{
+    transform: scale(1);
+}
+
+
+.radio-box p{
+    margin-left: -0.5rem;
+}
+
+form{
+    display: flex;
+    padding: 2rem 2rem;
+    gap: 2.3rem;
+    padding-bottom: 0rem;
+}
+
+.imperial{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 0rem;
+    padding-bottom: 0rem;
+}
+
+.size-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.imperial-input{
+    display: flex;
+    gap: 2rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+	color: #76a32d;
+}
+
+.attach, .input-field{
+position: relative;
+display: block;
+padding-bottom: 2rem;
+box-sizing: border-box;
+}
+
+.attach::after{
+    content: attr(data-domain);
+    position: absolute;
+    top: 21%;
+    right: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--green);
+}
+
+.input-field{
+    margin-top: 0.4rem;
+    padding: 1rem 1.4rem;
+    width: 16rem;
+    border-radius: 0.75rem;
+    border: 2px solid #D8E2E7;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.input-field::placeholder{
+    color: var(--gunmetal);
+    opacity: 0.25;
+}
+
+.input-field:focus{
+    outline: none;
+    border: 2px solid var(--green) !important;
+}
+
+.results{
+    margin: 0rem 2rem;
+    margin-bottom: 2rem;
+    background: var(--overlay-green);
+    padding: 1.6rem 1.8rem;
+    padding-bottom: 1rem;
+    color: var(--white);
+    border-radius: 1rem 62.4375rem 62.4375rem 1rem;
+}
+
+.results h5{
+    padding-bottom: 0.5rem;
+    letter-spacing: -0.075rem;
+}
+
+.calculated-answer{
+    margin: 0rem 2rem;
+    margin-bottom: 2rem;
+    background: var(--overlay-green);
+    color: var(--white);
+    border-radius: 1rem 62.4375rem 62.4375rem 1rem;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    align-self: stretch;
+}
+.bmr-calculator {
+	font-family: "Roboto", sans-serif;
+	padding: 8px 24px;
+	box-shadow: 0 8px 16px 6px rgba(0, 0, 0, 0.715);
+	background-color: #76a32d;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top:3%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 1%;
+	justify-content: center;
+  }
+  .bmr-calculator,
+  .bmr-calculator * {
+	box-sizing: border-box;
+	font-weight: bolder;
+	font-size: large;
+	color: #000;
+  }
+  .bmr-calculator form h3 {
+	font-size: large;
+	font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+	margin: 16px 0 10px 0;
+  }
+  
+  .bmr-calculator form input[type="text"] {
+	width: 100%;
+	padding: 4px 16px;
+	font-size: large;
+	font-weight: bold;
+	background-color: #76a32d;
+	border: 2px solid #000000;
+  }
+  
+  .bmr-calculator form input[type="text"].invalid {
+	border: 1px solid red;
+  }
+  
+  .bmr-calculator form {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+  }
+  
+  .bmr-calculator form #female {
+	margin-left: 20px;
+  }
+  
+  .bmr-calculator form .height,
+  .bmr-calculator form .weight {
+	position: relative;
+  }
+  
+  .bmr-calculator form .unit {
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	color: #76a32d;
+  }
+  
+  .bmr-calculator .result .calculate-btn {
+	padding: 8px 24px;
+	margin: 16px 0;
+	font-size: 18px;
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	background: #000000;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 32px;
+  }
+  
+  .bmr-calculator .result {
+	text-align: center;
+	color:  #76a32d;
+	font-size: 30px;
+  }
+  
+  .bmr-calculator .result .calories {
+	color: rgb(2, 2, 2);
+	font-size: 30px;
+	font-weight: 900;
+	padding-bottom: 20px;
+  }
+  
+  .bmr-calculator .result .error-message {
+	color: red;
+	font-size: 14px;
+	display: none;
+  }
+  
+  .bmr-calculator .result .error-message.active {
+	display: block;
+  }
+
+  
+.table_nutrisi {
+	font-family: "Roboto", sans-serif;
+	padding: 75px 24px;
+	box-shadow: 0 8px 16px 6px rgba(0, 0, 0, 0.715);
+	background-color: #76a32d;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top:0%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 9%;
+	justify-content: center;
+  }
+
+  .table_nutrisi .table_kiri  {
+	background-color: #73ff00 ;
+	width:40%;
+	border: 2px solid black;
+	position: relative;
+	top: -50px;
+
+  }
+  
+  /*=========================
+	Menu Olaharaga
+===========================*/
+.menu_olahraga{
+    width: 100%;
+    padding: 20px 0;
+	padding-bottom: 500px;
+}
+
+.menu_olahraga h1{
+    font-size: 50px;
+	font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+	margin-top: 5px;
+}
+
+
+.menu_olahraga .countainers{
+	width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15fr;
+    grid-gap: 20px;
+}
+
+.menu_olahraga .countainers .list_olahraga{
+	background: #ffffff;
+	border-style: solid;
+	border-radius: 10px;
+	box-shadow: 0px 10px 10px
+	rgba(0, 0, 0,.2);
+	display: flex;
+	max-width: 100%;
+	overflow: hidden;
+	width: 1300;
+	transition: bacground 0.3s, transform 0.3s;
+}
+
+.menu_olahraga  .countainers .list_olahraga .nama_olahraga{
+	background: #76a32d ;
+	padding: 28px;
+	width: 250px;
+	font-style: inherit;
+	
+	
+}
+
+.menu_olahraga  .countainers .list_olahraga .penjelasan {
+	padding: 20px;
+
+	
+	
+}
